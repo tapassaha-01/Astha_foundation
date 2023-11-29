@@ -1,0 +1,35 @@
+
+<div class="gallery">
+    <div class="title">
+        <p style="font-size: 16px; color: #F8F8F8; margin-bottom: 40px;">Gallery</p>
+    
+        <p style="color: #E33439; font-size: 36px">
+          Capturing Hope: Our Journey in Pictures
+        </p>
+        <div style="margin-top: 16px;">
+          <img
+            src="../../../assets/Home Page Components/Abstract Pattern 1 Component - Gallery.svg"
+            alt="sign"
+            height="24.45px"
+            width="255.9px"
+          />
+        </div>
+      </div>
+      <!-- <div class="PhotoSection">
+        <div class="masonry-container" ngxMasonry>
+            <div class="masonry-item" *ngFor="let photo of photos">
+              <img [src]="photo.src" alt="Photo">
+            </div>
+          </div>
+          <img src="../../../assets/coursel_img/atul-pandey-0f3bZHXZSz8-unsplash.jpg" alt=""> 
+      </div> -->
+      <div class="PhotoSection">
+      <ngx-masonry [options]="masonryOptions" >
+        <div ngxMasonryItem class="masonry-item"  *ngFor="let picture of masonryImages" class="masonry-item">
+          <img src="{{picture.src}}">
+        </div>
+      </ngx-masonry></div>
+      <div class="info-btn" style="margin-top: 40px;" (click)="showMoreImages()">
+        See More
+      </div>
+    </div>

@@ -1,0 +1,103 @@
+ <app-header style="height: 120px; width: 100%;"></app-header>
+<div class="home ">
+    <!-- <app-body class="layer"></app-body> -->
+   
+   
+    <div class="heroSection layer" >
+        <img src="../../../assets/Home Page Components/Hero Pattern.png" alt="hero" style="position: absolute; width: 100%;">
+        <img src="../../../assets/Home Page Components/sanjoy-sadhukhan-3QNEf_oN-WI-unsplash.jpg" alt="" style="float: right; ">
+   </div>
+    <div class="overlay " style="position: absolute;">
+        <div class="shw" >
+            <!-- <div class="typewriter"> -->
+            <p >{{titleText}}</p>
+                <div class="upper-btn">
+                    <div class="btn info-white">Donate</div>
+                  <div class="btn play">
+                    <i class="fa-solid fa-circle-play icon"></i>
+                    
+                        <!-- <img src="../../../assets/Home Page Components/Play - Video.svg" alt="play_icon" style="margin-right: 8px;cursor:pointer;">-->
+                        <label style="cursor:pointer;">Our Story</label> 
+                    </div>
+                    
+                  </div>
+                  <div class="social-icon">
+                    <i class="fa-brands fa-whatsapp social" ></i>
+                    <i class="fa-brands fa-facebook social" ></i>
+                    <i class="fa-brands fa-twitter social" ></i>
+                    <i class="fa-brands fa-instagram social" ></i>
+                  </div>
+                  
+        </div>
+       
+    </div> 
+
+</div>
+
+ <div class="event-coundown">
+     <div class="event-info">
+        <p style="font-size: 26px; padding-bottom: 12px;">{{EventName}}</p>
+        <div class="box">
+            <i class="fa-solid fa-calendar-days" style="color: #E33439; height: 24px; width: 24px; padding: 24px;"></i>
+        <p >{{EventDate}}</p>
+    </div>
+       <div class="box">
+        <i class="fa-solid fa-location-dot" style="color: #E33439; 
+        height: 24px;
+        width: 24px;
+        padding: 24px;"></i>
+        <p>{{EventPlace}}</p>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: flex-start; width: 100%; margin-top: 12px;">
+        <div class="btn info-white">More info</div>
+        <div class="btn join" >
+            Join Event
+        </div>
+
+      </div>
+        
+    </div> 
+    <div class="count-down">
+       
+        <div class="clock">
+            <div class="timer">
+                <div class="number">{{(remainingTime / 86400) | floor }}</div>
+                <div class="words">Days</div>
+            </div>
+            <div class="devider">
+                <div class="circle"></div>
+                <div class="circle" style="margin-top: 5px;"></div>
+            </div>
+            <div class="timer">
+                <div class="number">{{(remainingTime % 86400) /3600 | floor}}</div>
+                <div class="words">Hours</div>
+            </div>
+            <div class="devider">
+                <div class="circle"></div>
+                <div class="circle" style="margin-top: 5px;"></div>
+            </div>
+            <div class="timer">
+                <div class="number">{{((remainingTime % 3600) / 60) | floor}}</div>
+                <div class="words">Minutes</div>
+            </div>
+            <div class="devider">
+                <div class="circle"></div>
+                <div class="circle" style="margin-top: 5px;"></div>
+            </div>
+            <div class="timer">
+                <div class="number">{{(remainingTime % 60) | floor }}</div>
+                <div class="words">Seconds</div>
+            </div>
+        <div class="Time-pattern">
+            <img src="../../../assets/Home Page Components/Time-Pattern-Component.svg" alt="Time-Pattern">
+        </div>
+        </div>
+    </div>
+
+</div> 
+<app-about id="about_us"></app-about>
+<app-events id="events"></app-events>
+<app-gallery id="gallery"></app-gallery>
+<app-testimonials></app-testimonials>
+<app-subscribe id="support"></app-subscribe>
+<!-- <app-footer></app-footer> -->

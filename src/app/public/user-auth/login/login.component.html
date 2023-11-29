@@ -1,0 +1,38 @@
+<div class="loginContainer">
+    <h1>Login</h1>
+    <label >Provide User Credentials</label>
+    <div class="loginForn">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+           <div class="inputDiv">
+                <mat-icon> email</mat-icon>
+              <input type="email" formControlName="email" (focus)="togglePlaceholder()" (blur)="togglePlaceholder()" class="inputCred">
+              <span for="myInput" [ngClass]="{'active': isInputFocused}">Email</span>
+              <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+                <div *ngIf="loginForm.get('email').hasError('required')" class="msgTxt">Email is required</div>
+                <div *ngIf="loginForm.get('email').hasError('email')" class="msgTxt">Invalid email</div>
+              </div>
+            </div>
+            <div class="inputDiv">
+                <mat-icon>lock</mat-icon>
+              <input type="password" formControlName="password" (focus)="togglePlaceholder()" (blur)="togglePlaceholder()" class="inputCred">
+              <span for="myInput" [ngClass]="{'active': isInputFocused}">Password</span>
+              <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched" class="msgTxt">
+                <div *ngIf="loginForm.get('password').hasError('required')" >Password is required</div>
+              </div>
+            </div> 
+            <button  type="submit" [disabled]="loginForm.invalid">Login</button>
+          </form>
+          <div class="recoverySection">
+            <div class="checkbox">
+                <input type="checkbox">
+                <label >Remember Me</label>
+            </div>
+            
+            <label routerLink="/recoverAcc">Forgot Email/Password</label>
+          </div><br>
+
+          <div class="registerSection">
+            <label routerLink="/register">Don't have any account for astha</label>
+          </div>
+    </div>
+</div>

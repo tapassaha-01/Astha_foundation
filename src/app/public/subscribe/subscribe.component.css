@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    background-color: #313131;
+}
+ 
+.Subscription{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    flex-direction: column;
+    & .SubcriptionTitle{
+        color: #E33439;
+        font-size: 20px;
+        
+    }
+    & .SubscriptionBody{
+        margin: 40px 0px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #F8F8F8;
+        text-align: center;
+        width: 66.7%;
+    }
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 50.3%;
+    border-radius: 5%;
+    flex-direction: row;
+    & .input{
+        border-radius: 4%;
+       background-color: #F8F8F8;
+       width: 69.53%;
+       height: 100%;
+       display: flex;
+        justify-content: flex-start;
+        padding:0px 40px;
+        align-items: center;
+        color: #9E9E9E;
+        font-size: 12px;
+    }
+    & .email-btn{
+        border-radius: 5%;
+        background-color: #E33439;
+        height: 100%;
+        width: 26.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F8F8F8;
+        font-size: 14px;
+    }
+}
+.social-icon{
+    margin: 40px 0px;
+    & img{
+        margin: 0px 8px;
+        height: 48px;
+        width: 48px;
+    }
+}
+.copyright{
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    color: #484848;
+    margin: 24px 0px;
+}

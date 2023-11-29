@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.loginContainer{
+    height: 100%;
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   /* text-align: center;x */
+}
+.loginContainer label{
+    display: flex;
+    justify-content: center;
+}
+label{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    
+}
+
+.loginContainer h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.inputCred{
+    
+    border-radius: 50px;
+    height: 70px;
+    width:350px;
+}
+.inputDiv{
+    position: relative;
+    display: flex;
+        flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+mat-icon{
+    position: relative;
+    top:48px;
+    left:15px;}
+button{
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 50px;
+    height: 50px;
+    width:350px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    transition: all 0.3s linear;
+    color: black;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: aqua;
+    box-shadow: 1px 5px 7px 1px rgba(255, 254, 254, 0.2);
+}
+input{
+    /* position: relative; */
+    font-family: 'Poppins', sans-serif;
+    padding-left: 45px;
+    border:none;
+    outline: none;
+    color: black;
+    background-color: rgb(255, 255, 255,0.3);
+}
+.msgTxt{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 25, 25);
+    padding-left: 15px;
+    font-size: 12px;
+}
+::-webkit-input-placeholder{
+    color: aliceblue;
+}
+.recoverySection{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left:5px
+}
+    .recoverySection label{
+        cursor: pointer;
+    }
+    .recoverySection label:hover{
+        color:aqua
+    }
+.checkbox{
+    display: flex;
+}
+.checkbox input{
+    cursor: pointer;
+}
+.registerSection label{
+    cursor:pointer;
+
+}
+.registerSection label:hover{
+    color: aqua;
+}
+/* .loginForm {
+    position: relative;
+  }
+   */
+  .inputDiv span {
+    color:white;
+    position: relative;
+    top: -43px;
+    left: 3rem;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-size: 14px;
+  }
+  
+  .inputDiv span.active {
+    transform: translateY(-100%) scale(0.85);
+  }
+  

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* #events{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  scroll-padding: 400px; /* Adjust this value to control the scrolling speed 
+  height: 300px; Set the desired height for your scroll container 
+  overflow-y: scroll;
+} */
+.title{
+    padding: 20px 50px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: blur(10px); /* Adjust the blur radius as desired */
+    /* z-index: -1; */
+    background-color:#F8F8F8;
+    
+    & .Name{
+        cursor: pointer;
+        margin-left: 5px;
+        & .red{
+            color: #E33439;
+            font-size: 17px;
+        }
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        flex-direction: column;
+        & h5{
+            font-family: 'Ultra', serif;
+            margin-bottom: 0px;
+            font-size: 12px;
+            letter-spacing: 5%;
+        }
+        & p{
+            font-size: 6px;
+            color: #313131;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+img{
+    cursor: pointer;
+    /* margin-left: 50px ; */
+}   
+.menu{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+/* float: right; */
+    padding-right:0px 10px;
+     & ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+     }
+     & li{
+        display: flex;
+        border: none;
+        list-style: none;
+        float: left;
+        margin: 15px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+    & a{
+            font-size: 13px;
+            font-family: 'Ultra', serif;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #313131;
+            transition: all 0.3s linear;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+    }
+    .menu ul li a:hover{
+        color: #E33439;
+    }
+
+.btn{
+    border: 2px solid #E33439;
+    display:flex;
+    height: 60px;
+    width: 160px;
+    background-color: #E33439;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn p{
+    margin-bottom: 0px;
+    font-size: 14px;
+    
+    cursor: pointer;
+    font-family: 'Ultra', serif;
+    color: #F8F8F8;
+}
+.btn:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #F8F8F8;
+   
+    &  p{
+        color: #E33439;
+    }
+}
+.mobile-nav-icon[name="close-icon"]{
+    /* cursor: pointer; */
+   display: none;
+}
+.mobile-navbar-btn{
+    display: none;
+        background: transparent;
+        cursor: pointer;
+}
+
+/* responsive code */
+
