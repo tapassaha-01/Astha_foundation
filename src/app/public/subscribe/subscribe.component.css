@@ -32,7 +32,7 @@
     border-radius: 5%;
     flex-direction: row;
     & .input{
-        border-radius: 4%;
+        border-radius: 8px;
        background-color: #F8F8F8;
        width: 69.53%;
        height: 100%;
@@ -42,9 +42,10 @@
         align-items: center;
         color: #9E9E9E;
         font-size: 12px;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     }
     & .email-btn{
-        border-radius: 5%;
+        border-radius: 10px;
         background-color: #E33439;
         height: 100%;
         width: 26.5%;
@@ -53,16 +54,41 @@
         align-items: center;
         color: #F8F8F8;
         font-size: 14px;
+        border: 2px solid #e33439;
+  transition: all 0.5s ease;
     }
 }
-.social-icon{
+.email-btn:hover{
+    background-color: #f8f8f8;
+    color: #e33439;
+    cursor: pointer;
+}
+
+
+/* .social-icon{
     margin: 40px 0px;
     & img{
         margin: 0px 8px;
         height: 48px;
         width: 48px;
     }
-}
+} */
+.social-icon {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social {
+    color: #f8f8f8;
+    margin: 30px;
+    height: 22px;
+    transition: all 0.5s ease;
+  }
+  .social:hover {
+   transform: scale(2) translateX(5px) translateY(5px) ;
+  }
 .copyright{
     font-size: 12px;
     line-height: 40px;

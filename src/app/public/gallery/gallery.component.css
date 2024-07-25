@@ -63,5 +63,12 @@
       background-color: #E33439;
       line-height: 0px;
       color: #F8F8F8;
+      border: 2px solid #e33439;
+  transition: all 0.5s ease;
     
+  }
+  .info-btn:hover{
+    background-color: #f8f8f8;
+    color: #e33439;
+    cursor: pointer;
   }
