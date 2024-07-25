@@ -19,7 +19,7 @@ export class HomeComponent {
   EventDate: string = '25th August, 2023 at 11 am IST';
   EventPlace: string = 'Shrirampur, Hooghly';
 
-  targetDate: Date = new Date('2023-12-31T23:59:59'); // Replace with your target date and time
+  targetDate: Date = new Date('2024-12-31T23:59:59'); // Replace with your target date and time
   remainingTime!: number;
   countdownInterval: any;
 
